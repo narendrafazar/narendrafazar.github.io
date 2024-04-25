@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64933ec8a0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" class="logo" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars-staggered" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span>Narendra</span>
+            Faza Ramadhan
+          </h1>
+          <p>Fullstack Web Developer & Graphic Designer</p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ ABOUT ------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Gua.JPG" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-me">
+              I'm currently Computer Science student at UPNVJ who will hit bachelor degree in this year. 22 years old man and live in Indonesia, Depok city. I'm also graphic designer and video game content creator especially Valorant. Thank you for visiting my portfolio website, hope we can make something good.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span><br />Build and Design web/app
+                  interfaces
+                </li>
+                <li>
+                  <span>Graphic Designer</span><br />Create motion graphics
+                </li>
+                <li>
+                  <span>Video Editor</span><br />Create video game contents
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023</span><br />Outsystems Developer at PT Bank Central
+                  Asia Tbk
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017 - 2020</span><br />Science senior high school
+                  student at SMAN 9 Depok
+                </li>
+                <li>
+                  <span>2020 - Current</span><br />Computer Science student at
+                  UPN Veteran Jakarta
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------- SERVICES-------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Fullstack web developer with tech stack like MERN, MEVN, and TALL
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              UI/UX designer who creates UI and UX for web app or mobile app with figma
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-pencil"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Graphic designer who make a motion graphic with Adobe After Effects, Adobe Premiere, and Adobe Photoshop
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------PORTFOLIO------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <h2 class="projects">Graphic Design projects</h2>
+        <div class="work-list">
+          <div class="work">
+            <video controls>
+              <source src="videos/Kawasaki Ninja Logo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="layer">
+              <h3>Particle logo animation</h3>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <video controls>
+              <source
+                src="videos/Bottle Mockup Aphro Shine.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div class="layer">
+              <h3>Spray bottle mockup animation</h3>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <video controls>
+              <source src="videos/Dodge Challenger.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="layer">
+              <h3>Car smooth transition</h3>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://instagram.com/naren_motion" class="btn"
+          >Detail on @naren_motion</a
+        >
+      </div>
+    </div>
+
+    <!-----------------CONTACT------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane fa-fade"></i
+              >narendra.faza@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone fa-shake"></i>+62 898-8571-526</p>
+            <div class="social-icons">
+              <a href="https://instagram.com/narendrafazar"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com/in/narendra-faza-ramadhan/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/narendrafazar"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href="https://youtube.com/channel/UCmoUSc5i-MTXp2EpPvbXhLQ"
+                ><i class="fa-brands fa-youtube"></i></i
+              ></a>
+            </div>
+            <a href="files/Narendra Faza Ramadhan_CV_new.pdf" download class="btn cv"><i class="fa-solid fa-download"></i> Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn submit">Submit</button>
+            </form>
+            <!-- success message after submit -->
+            <span id="success-message"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️ Naren 2024. Made with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabName) {
+        // remove garis bawah link yang active kalo di klik
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        // remove tab-contents yang active kalo di klik
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        // nambahin garis bawah (active-link) tergantung yang diklik
+        event.currentTarget.classList.add("active-link");
+        // munculin tulisan tergantung tab-contents yang di klik (active-tab)
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sideMenu = document.getElementById("sideMenu");
+
+      // buka icon
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+    <!-- Google Sheets script from github jamiewilson -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxFHxibHfD7QXajqc81YkIlgAOLVd3IPGqASCaAAUtJUhgt-6teEF6iGxiHKlsm_faDhg/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      // bikin message success after submit
+      const msg = document.getElementById("success-message");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // bikin message success nya ilang setelah 4 detik
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+              msg.innerHTML = ""
+            }, 4000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
